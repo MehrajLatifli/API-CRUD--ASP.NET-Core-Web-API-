@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Javascript CRUD</title>
+
+    <link rel="stylesheet" href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
+
+    
+    
+</head>
+
+<body>
+    
+    <br>
+    
+    <input type="text" class="form-control" id="linktext" placeholder="link">
+
+    <button onclick="Get()" class="btn btn-info"> Get</button>
+
+    <br>
+    
+    <div id="container">
+        
+        <form name="form1" id="form1" class="form-text" method="post">
+
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="CustomerIdinOrders" placeholder="CustomerIdinOrders">
+            </div>
+            
+            <br>
+            
+            <!-- <div class="form-group">
+                <input type="text" class="form-control" id="OrderDate" placeholder="OrderDate">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="RequiredDate" placeholder="RequiredDate">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShippedDate" placeholder="ShippedDate">
+            </div> -->
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="number" class="form-control" id="ShipVia" placeholder="ShipVia">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" pattern="^\d*(\.\d{0,2})?$" class="form-control" id="Freight" placeholder="Freight">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipName" placeholder="ShipName">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipAddress" placeholder="ShipAddress">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipCity" placeholder="ShipCity">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipRegion" placeholder="ShipRegion">
+            </div>
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipPostalCode" placeholder="ShipPostalCode">
+            </div>
+
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="ShipCountry" placeholder="ShipCountry">
+            </div>
+            
+            <br>
+            
+            <button type="button" onclick="Post()" class="btn btn-success"> Add</button>
+            
+        </form>
+        
+        
+        <form name="form2" id="form2" class="form-text">
+            
+            <br>
+            
+            <div class="form-group">
+                <input type="text" class="form-control" id="OrderId" placeholder="OrderId">
+            </div>
+            
+            <br>
+            
+            <button type="button" onclick="Delete()" class="btn btn-danger"> Delete</button>
+            
+        </form>
+        
+        <br>
+        
+        <button type="button" onclick="Update()" class="btn btn-warning"> Update</button>
+
+        <br>
+        
+    </div>
+    
+    
+    <br>
+    
+    <div id="result">
+        
+    </div>
+    
+    <script src="jquery/jquery-3.6.0.js"></script>
+    
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
